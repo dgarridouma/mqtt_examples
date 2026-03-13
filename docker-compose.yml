@@ -1,0 +1,28 @@
+services:
+
+ mosquitto:
+   image: eclipse-mosquitto:1.6.13
+   hostname: mosquitto
+   container_name: mosquitto
+   networks:
+      default:
+   expose:
+       - "1883"
+       - "9001"
+   ports:
+       - "1883:1883"
+       - "9001:9001"
+
+
+ grafana:
+    image: grafana/grafana:12.0.1
+    ports:
+        - "3003:3000"
+    environment:
+        - GF_INSTALL_PLUGINS=https://github.com/orchestracities/grafana-map-plugin/releases/download/v1.4.2/orchestracities-map-panel-1.4.2.zip;grafana-map-plugin,grafana-clock-panel,grafana-worldmap-panel 
+        - GF_INSTALL_PLUGINS=grafana-mqtt-datasource
+    networks:
+      default:
+        
+
+ 
