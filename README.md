@@ -10,13 +10,13 @@ A collection of practical Python examples for working with MQTT brokers, includi
 mqtt_examples/
 ├── mqtt5/                            # MQTT 5 protocol examples
 ├── mqtt_publisher_simple.py          # Basic MQTT publisher
-├── mqtt_publisher_simple_gcp.py      # Publisher for GCP IoT Core (plain)
-├── mqtt_publisher_ssl_gcp.py         # Publisher for GCP IoT Core (SSL)
+├── mqtt_publisher_simple_gcp.py      # Publisher for GCP (plain)
+├── mqtt_publisher_ssl_gcp.py         # Publisher for GCP (SSL)
 ├── mqtt_publisher_ssl_hivemq.py      # Publisher for HiveMQ Cloud (SSL)
 ├── mqtt_publisher_grafana_random.py  # Publisher with random data for Grafana
 ├── mqtt_subscriber_simple.py         # Basic MQTT subscriber
-├── mqtt_subscriber_simple_gcp.py     # Subscriber for GCP IoT Core (plain)
-├── mqtt_subscriber_ssl_gcp.py        # Subscriber for GCP IoT Core (SSL)
+├── mqtt_subscriber_simple_gcp.py     # Subscriber for GCP (plain)
+├── mqtt_subscriber_ssl_gcp.py        # Subscriber for GCP (SSL)
 ├── mqtt_subscriber_ssl_hivemq.py     # Subscriber for HiveMQ Cloud (SSL)
 ├── sensehat_mqtt.py                  # Raspberry Pi Sense HAT sensor publisher
 ├── docker-compose.yml                # Docker setup (e.g., local broker)
